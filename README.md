@@ -6,13 +6,9 @@
 
 ### mobail: 740px
 
-## color
+## color palete
 
-### yellow
-
-### black
-
-### gray
+### https://colorhunt.co/palette/17153b2e236c433d8bc8acd6
 
 ## font family
 

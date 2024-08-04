@@ -1,0 +1,23 @@
+:root{
+    --home-land-color: #2E236C;
+}
+#home{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--home-land-color);
+    padding: 1% 5%;
+    height: 100vh;
+}
+.letter-for-user{
+    background: #fefefe;
+    padding: 2%;
+    border-radius: 20px;
+}
+@media (max-width:800px){
+    #home{
+        justify-content: center;
+    }
+}

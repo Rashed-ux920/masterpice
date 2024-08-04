@@ -1,142 +1,77 @@
 :root{
-    --hbg-:rgb(255, 242, 0);
-    --bg-colora: rgb(54, 52, 52);
-    --text-colora: color-mix(in srgb, yellow 70%, hsl(46, 98%, 51%) 30%);
-    --font-weightn: 600;
-    --tcolor-ofbtn:yellow;
-    --border-radiusa: 20px;
-    --border-radiuslogo: 30px;
-    --time-in-second: 0.5s;
-    --transform-scale: 1.1;
-    --visibilityh: hidden;
-    --visibilityv: visible;
-    
-}
-.visibil{
-    visibility: var(--visibilityh);
+    --header-background:#17153B;
+    --color-a: #fefefe ;
+    --animation-color: #C8ACD6;
+
 }
 
-/* section{height: 200vh;} */
-header{
+.header{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    /* position: fixed; */
     justify-content: space-between;
     align-items: center;
-    padding: 10px 90px;
-    background: var(--hbg-);
+    padding: 2% 4% 2% 4%;
+    background: var(--header-background);
 }
-header a{
+.header a{
     text-decoration: none;
-    font-weight: var(--font-weightn);
-    color: var(--text-colora);
+    margin: 0 10px;
+    color: var(--color-a) ;
+    font-size: 1.3em;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-transform: capitalize;
 }
-header a img{
-    height: 80px;
-    width: 100px;
-    border-radius: 10%;
-    border: 2px solid black;
-    border-top-left-radius: var(--border-radiuslogo);
-    border-bottom-right-radius: var(--border-radiuslogo);
-    transition: all var(--time-in-second) ease-in-out;
-}
-header a img:hover{
-    transform: scale(var(--transform-scale));
-}
-.search{
+.menu{
+    /* padding: 80px 20px; */
     display: flex;
-    align-items: center;
-    /* visibility: var(--visibilityh); */
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 20px;
-    /* visibility: var(--visibilityh); */
-}
-nav a{
-    margin-left: 10px;
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    background: var(--bg-colora);
-    border-top-left-radius: var(--border-radiuslogo);
-    border-bottom-right-radius: var(--border-radiuslogo);
-    visibility: var(--visibilityv);
-    transition: all var(--time-in-second) ease-in-out;
-}
-nav a:hover{
-    transform: scale(var(--transform-scale));
-}
-nav a span{
-    margin-right: 10px;
-    margin-left: 10px;
-}
-.log{
-    display: flex;
-    align-items: center;
-}
-.log a{
-    margin-right: 1em;
-    background: var(--bg-colora);
-    padding: 10px;
-    border-top-left-radius: var(--border-radiusa);
-    border-bottom-right-radius: var(--border-radiusa);
-    transition: all var(--time-in-second) ease-in-out;
 
-}
-.log a:hover{
-    transform: scale(1.1);
-}
-.search button{
-    border: none;
-    background: inherit;
+  }
+  .menu-1{
+    background: none;
+  }
+  .menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .menu li{
+    display: inline-block;
+    margin: 0 15px;
+  }
+  .menu a{
+    font-size: 15px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--color-a) ;
+    display: block;
+    position: relative;
+    padding: 4px 0;
+  }
+  .menu a::before{
+    content: "";
+    width: 100%;
+    height: 4px;
     position: absolute;
-    z-index: 1000;
-    font-size: 20px;
-    right: 52em;
-    /* left: 0.1em; */
-}
-.search input{
-    padding: 10px 30px;
-    border: 2px solid black;
-    border-radius: var(--border-radiuslogo);
-}
+    left: 0;
+    bottom: 0;
+    background: var(--animation-color);
+    transition: 0.5s transform ease;
+    transform: scale3d(0,1,1);
+    transform-origin: 0 50%;
+  }
+  .menu a:hover::before{
+    transform: scale3d(1,1,1);
+  }
+  .menu-1 a::before{
+    background: var(--animation-color);
+    transform-origin: 100% 50%;
+  }
+  .menu-1 a:hover::before{
+    transform-origin: 0 50%;
+  }
 
-@media(max-width:720px){
-    header{
-        width: 100%;
-        justify-content: center;
-        text-align: center;
-    }
-    header a img{
-        border-radius: 50%;
-    }
-    .search{
-        visibility: hidden;
-    }
-    .getin{
-        display: block;
-        margin-top: 1em;
-        margin-bottom: 1em;
-    }
-    .log{
-        display: flex;
-        justify-content: start;
-        margin-right: 5em;
-        width: 100%;
-    }
-    nav{
-        margin-top: 1em;
-    }
-    nav a{
-        padding: 4px 9px;
-        border-top-left-radius: 20px;
-
-    }
-    
-
-
+.img{
+    width: 20%;
 }
