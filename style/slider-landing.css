@@ -28,21 +28,25 @@
 }
 .contaner #slider-img-1 img{
     width: 100%;
+    max-width: 900px;
     padding: cover;
     
 }
 .contaner #slider-img-2 img{
     width: 100%;
+    max-width: 900px;
     padding: cover;
     
 }
 .contaner #slider-img-3 img{
     width: 100%;
+    max-width: 900px;
     padding: cover;
     
 }
 .contaner #slider-img-4 img{
     width: 100%;
+    max-width: 900px;
     padding: cover;
     
 }
