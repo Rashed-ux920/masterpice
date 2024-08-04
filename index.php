@@ -21,23 +21,7 @@
     </header>
     <section id="home">
         <div class="letter-for-user">
-            <h3>
-                Join countless satisfied clients who have trusted<h2>handyman</h2>
-                for their service needs. <b>Contact us today</b> <br>
-                to learn more about how we can help you achieve success.
-            </h3>
-            <div class="call-to-action">
-                <div class="block">
-                    <a href="#" id="openPopupBtn" class="getin ">
-                        signin
-                    </a>
-                </div>
-                <div class="block">
-                    <a href="#" class="getin" id="openSignUpPopupBtn">
-                        sign<span>up</span>
-                    </a>
-                </div>
-            </div>
+            <?php include "php/message.php";?>
         </div>
         <div id="slider">
 
@@ -50,13 +34,6 @@
                         <div class="slider-img-4"> <img src="imeg/hands-electrician-electrician-work-handyman-electrical-installation-electrician-work-home-renovation-electrical-149176404.jpg" alt=""></div>
                     </div>
                 </div>
-                <!-- this have to be delete -->
-                <!-- <div class="button-holder">
-                    <a href="#slider-img-1" class="button"></a>
-                    <a href="#slider-img-2" class="button"></a>
-                    <a href="#slider-img-3" class="button"></a>
-                    <a href="#slider-img-4" class="button"></a>
-                </div> -->
             </div>
         </div>
     </section>

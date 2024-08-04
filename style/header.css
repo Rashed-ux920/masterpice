@@ -12,6 +12,7 @@
     align-items: center;
     padding: 2% 4% 2% 4%;
     background: var(--header-background);
+    
 }
 .header a{
     text-decoration: none;

@@ -39,7 +39,7 @@
             </div>
             <div class="block">
                 <a href="#" class="getin" id="openSignUpPopupBtn">
-                    sign<span>up</span>
+                    signup
                 </a>
             </div>
 

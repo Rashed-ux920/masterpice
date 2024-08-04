@@ -1,21 +1,56 @@
 :root{
     --home-land-color: #2E236C;
+    --logo-text-color: #C8ACD6;
 }
 #home{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap-reverse;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background: var(--home-land-color);
     padding: 1% 5%;
     height: 100vh;
 }
 .letter-for-user{
-    background: #fefefe;
+    background: #f8e9e9;
     padding: 2%;
     border-radius: 20px;
+    width: max-content;
+    position: absolute;
+    left: 7%;
+    bottom: 4%;
+    z-index: 1000;
 }
+.letter-for-user h1{
+    margin: 1%;
+    color: var(--home-land-color);
+    text-transform: capitalize;
+
+}
+.logo-text{
+    color: var(--logo-text-color);
+    margin-left: 1%;
+    margin-bottom: 1%;
+    text-transform: uppercase;
+}
+.paragraphe{
+    margin: 1%;
+    color: var(--home-land-color);
+    text-transform: capitalize;
+}
+.call-to-action{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    font-weight: 900;
+    margin-top: 1em;
+}
+.ancertag{
+    margin: 1%;
+    color: crimson;
+}
+
 @media (max-width:800px){
     #home{
         justify-content: center;

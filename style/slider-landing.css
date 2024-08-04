@@ -1,6 +1,6 @@
 #slider{
     background: #2E236C;
-    height: 70vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     text-align: center;
@@ -13,8 +13,8 @@
 }
 .contaner .wrapper{
     border-radius: 20px;
-    width: 50vw;
-    height: 50vh;
+    width: 90vw;
+    height: 80vh;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 2px 1px 10px 10px color-mix(in srgb, #C8ACD6 50%, #433D8B 20%);
